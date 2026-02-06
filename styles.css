@@ -1,0 +1,41 @@
+body {
+    background-image: url("JBU_MainSt_2021TP_010-min.webp");
+    font-family: sans-serif;
+}
+
+h1 {
+    color: lightblue;
+    margin-left: 20px;
+}
+
+h3 {
+    color: white;
+    margin-left: 20px;
+}
+
+
+
+<style>
+	}
+#intro{
+	width: 440px;
+	height: 20;
+	background-color: black;
+	}
+#table {
+	width: 200px;
+	height: 235px;
+	background-color: black;
+	}
+#whiteWord {
+	color: white;
+}
+
+#seat {
+	width: 350px;
+	height: 60px;
+	background-color: Black;
+	padding: 10px;
+	}
+
+</style>
