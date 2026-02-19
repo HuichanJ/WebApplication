@@ -1,6 +1,5 @@
 let students = [];
 
-// Load JSON when page loads
 window.onload = function() {
     fetch("students.json")
         .then(response => response.json())
@@ -10,7 +9,6 @@ window.onload = function() {
         });
 };
 
-// Display table
 function displayStudents(list) {
     let tbody = document.querySelector("#studentTable tbody");
     tbody.innerHTML = "";
@@ -33,7 +31,6 @@ function displayStudents(list) {
     });
 }
 
-// Search in real time
 document.getElementById("searchInput").addEventListener("input", function() {
     let value = this.value.toLowerCase();
     let filtered = students.filter(s =>
@@ -42,7 +39,6 @@ document.getElementById("searchInput").addEventListener("input", function() {
     displayStudents(filtered);
 });
 
-// Sort
 document.getElementById("sortSelect").addEventListener("change", function() {
     if (this.value === "name") {
         students.sort((a, b) => a.name.localeCompare(b.name));
@@ -53,13 +49,11 @@ document.getElementById("sortSelect").addEventListener("change", function() {
     displayStudents(students);
 });
 
-// Add Student
 function addStudent() {
     let name = document.getElementById("name").value.trim();
     let age = document.getElementById("age").value.trim();
     let course = document.getElementById("course").value.trim();
 
-    // Validation
     if (name === "" || age === "" || course === "") {
         alert("All fields are required!");
         return;
@@ -85,13 +79,12 @@ function addStudent() {
     students.push(newStudent);
     displayStudents(students);
 
-    // Highlight last row
     let rows = document.querySelectorAll("#studentTable tbody tr");
     let lastRow = rows[rows.length - 1];
     lastRow.classList.add("highlight");
 
-    // Clear form
     document.getElementById("name").value = "";
     document.getElementById("age").value = "";
     document.getElementById("course").value = "";
 }
+
