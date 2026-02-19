@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+input, select, button {
+    padding: 5px;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+.highlight {
+    background-color: lightgreen;
+}

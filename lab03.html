@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Management Dashboard</h1>
+
+<input type="text" id="searchInput" placeholder="Search by name">
+
+
+
+<select id="sortSelect">
+    <option value="">Sort By</option>
+    <option value="name">Name (A-Z)</option>
+    <option value="age">Age (Ascending)</option>
+</select>
+
+<p id="message"></p>
+
+
+
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<hr>
+
+<h3>Add New Student</h3>
+
+<input type="text" id="name" placeholder="Name">
+<input type="text" id="age" placeholder="Age">
+<input type="text" id="course" placeholder="Course">
+<button onclick="addStudent()">Add Student</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
