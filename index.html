@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Admission Form</title>
+
+<style>
+body{
+    font-family: Arial;
+}
+
+form{
+    width:300px;
+    margin:auto;
+}
+
+input, select{
+    width:100%;
+    margin:5px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Student Admission Form</h2>
+
+<form method="POST" action="emailcreator.php">
+
+First Name:<br>
+<input type="text" name="firstname" required><br>
+
+Last Name:<br>
+<input type="text" name="lastname" required><br>
+
+Admission Year:<br>
+<input type="text" name="adminYear" required><br>
+
+Department:<br>
+<select name="department">
+<option value="cs">Computer Science</option>
+<option value="ee">Electrical Engineering</option>
+<option value="me">Mechanical Engineering</option>
+<option value="ba">Business Administration</option>
+</select><br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
